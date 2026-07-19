@@ -8,8 +8,11 @@
     </head>
     <body>
         <h1>This is a chat app made by Rup Hasan</h1>
-        <div id="chat-container"></div>
-        <input type="text" placeholder="Enter your msg " />
+        <input type="text" id="msg" placeholder="Enter your msg " />
         <button onclick="send()">Send!</button>
+        <div id="chat-container"></div>
+        
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
