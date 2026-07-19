@@ -12,12 +12,3 @@ socket.on("showMsg", data => {
     paragraph.textContent = data;
     document.getElementById("chat-container").appendChild(paragraph);
 });
-
-socket.on("firstConnection", data => {
-    if (!loded) {
-        const paragraph = document.createElement("p");
-        paragraph.textContent = data;
-        document.getElementById("chat-container").appendChild(paragraph);
-        loded = true;
-    }
-});

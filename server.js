@@ -18,7 +18,7 @@ io.on("connection", async (socket) => {
         // row is every element of results
         // row is Object
         const msg = row.msg;
-        socket.emit("firstConnection", msg);
+        socket.emit("showMsg", msg);
     });
 
     conn.release();
